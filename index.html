@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Image hover effect</title>
+    <meta name="Description" content="Vue App">
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS links -->
+    <link rel="stylesheet" href="HW6_v2.css">
+  </head> 
+
+  <body>
+    <!-- 1st & 2nd doll image -->
+    <div id="app">
+      <h1>{{ message }}</h1>
+      <img class="dollClass" :src="dolls[0]" alt="Doll image" @mouseover="updateDoll(1)" @mouseleave="resetDoll" />
+      <div>
+        <img :src="dollImg" />
+      </div>
+    </div>
+
+    <!-- 3rd & 4th doll image -->
+    <div id="app2">
+      <img class="dollClass" :src="dolls[2]" alt="Doll image" @mouseover="updateDoll(3)" @mouseleave="resetDoll" />
+      <div>
+        <img :src="dollImg" />
+      </div>
+    </div>
+
+    <!-- 5th & 6th doll image -->
+    <div id="app3">
+      <img class="dollClass" :src="dolls[4]" alt="Doll image" @mouseover="updateDoll(5)" @mouseleave="resetDoll" />
+      <div>
+        <img :src="dollImg" />
+      </div>
+    </div>
+
+    <!-- 7th & 8th doll image -->
+    <div id="app4">
+      <img class="dollClass" :src="dolls[6]" alt="Doll image" @mouseover="updateDoll(7)" @mouseleave="resetDoll" />
+      <div>
+        <img :src="dollImg" />
+      </div>
+    </div>
+      
+    <!-- JavaScript link -->
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="HW6_v3.js"></script>    
+
+    <footer>
+      &copy; 2022 by Fiona Snyder
+    </footer> 
+  </body> 
+</html>
