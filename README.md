@@ -1,4 +1,4 @@
-# Images Show/Hide in Vue.js
+# Doll-Images Show/Hide in Vue.js
 
 ---
 
